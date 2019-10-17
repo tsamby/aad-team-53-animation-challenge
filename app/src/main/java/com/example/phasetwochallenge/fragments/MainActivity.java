@@ -1,20 +1,13 @@
-package com.example.phasetwochallenge;
+package com.example.phasetwochallenge.fragments;
 
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.phasetwochallenge.fragments.Fragment1;
-import com.example.phasetwochallenge.fragments.Fragment2;
-import com.example.phasetwochallenge.fragments.Fragment3;
-import com.example.phasetwochallenge.fragments.Fragment4;
-import com.example.phasetwochallenge.fragments.Fragment5;
-import com.example.phasetwochallenge.fragments.Fragment6;
-import com.example.phasetwochallenge.fragments.Fragment7;
-import com.example.phasetwochallenge.fragments.Fragment8;
+import com.example.phasetwochallenge.R;
 import com.hitomi.smlibrary.OnSpinMenuStateChangeListener;
 import com.hitomi.smlibrary.SpinMenu;
 
@@ -48,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         spinMenu.setEnableGesture(true);
-
 
         final List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(Fragment1.newInstance());
